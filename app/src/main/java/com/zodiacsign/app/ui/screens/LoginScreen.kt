@@ -1,9 +1,8 @@
-package com.zodiacsign.app.ui.feature.login
+package com.zodiacsign.app.ui.screens
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
-import android.widget.Toast
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -173,10 +172,12 @@ fun LoginScreen() {
             Spacer(modifier = Modifier.padding(16.dp))
             Button(
                 {
+                    /*
                     if (nameLastName.isEmpty() || birthPlace.isEmpty() || birthTimeValue == context.getString(R.string.birth_time_value) || gender.isEmpty()) {
                         Toast.makeText(context, context.getString(R.string.login_alert), Toast.LENGTH_SHORT).show()
                         return@Button
                     }
+                    */
                     val personData = PersonData(nameLastName, birthPlace, birthTime, gender)
                     val intent = Intent(context, MainActivity::class.java)
                     intent.putExtra(PERSON_DATA, personData)

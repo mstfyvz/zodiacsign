@@ -1,4 +1,4 @@
-package com.zodiacsign.app.ui.feature.profile
+package com.zodiacsign.app.ui.screens
 
 import android.app.Activity
 import android.os.Build
@@ -23,8 +23,6 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import com.zodiacsign.app.R
 import com.zodiacsign.app.data.model.PersonData
 import com.zodiacsign.app.util.Constants.PERSON_DATA

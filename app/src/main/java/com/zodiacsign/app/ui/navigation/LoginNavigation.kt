@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.zodiacsign.app.ui.feature.login.LoginScreen
+import com.zodiacsign.app.ui.screens.LoginScreen
 
 @Composable
 fun LoginNavigation() {
