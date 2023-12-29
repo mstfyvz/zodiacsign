@@ -8,5 +8,6 @@ data class PersonData(
     val nameLastName: String = "",
     val birthPlace: String = "",
     val birthTime: BirthTime = BirthTime("", "", "", "", ""),
-    val gender: String = ""
+    val gender: String = "",
+    val zodiacSign: String = ""
 ): Parcelable

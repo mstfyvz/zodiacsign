@@ -5,6 +5,7 @@
     <string name="birth_time_label">Doğum Saati</string>
     <string name="birth_time_value">%1$s-%2$s-%3$s %4$s:%5$s</string>
     <string name="gender_label">Cinsiyet</string>
+    <string name="zodiac_sign_label">Burç</string>
     <string name="male">Erkek</string>
     <string name="female">Kadın</string>
     <string name="login_text">Devam Et</string>

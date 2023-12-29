@@ -3,6 +3,7 @@ package com.zodiacsign.app.ui.screens
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.content.Intent
+import android.widget.Toast
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -58,6 +59,7 @@ fun LoginScreen() {
     var birthPlace by rememberSaveable { mutableStateOf("") }
     var birthTime by rememberSaveable { mutableStateOf(BirthTime()) }
     var birthTimeValue by rememberSaveable { mutableStateOf(context.getString(R.string.birth_time_label)) }
+    var zodiacSign by rememberSaveable { mutableStateOf("") }
     var expanded by remember { mutableStateOf(false) }
 
     Box(modifier = Modifier.fillMaxSize()) {
@@ -172,13 +174,12 @@ fun LoginScreen() {
             Spacer(modifier = Modifier.padding(16.dp))
             Button(
                 {
-                    /*
                     if (nameLastName.isEmpty() || birthPlace.isEmpty() || birthTimeValue == context.getString(R.string.birth_time_value) || gender.isEmpty()) {
                         Toast.makeText(context, context.getString(R.string.login_alert), Toast.LENGTH_SHORT).show()
                         return@Button
                     }
-                    */
-                    val personData = PersonData(nameLastName, birthPlace, birthTime, gender)
+                    zodiacSign = horoscopeCalculation(birthTime.month, birthTime.day)
+                    val personData = PersonData(nameLastName, birthPlace, birthTime, gender, zodiacSign)
                     val intent = Intent(context, MainActivity::class.java)
                     intent.putExtra(PERSON_DATA, personData)
                     context.startActivity(intent)
@@ -188,5 +189,23 @@ fun LoginScreen() {
                 Text(stringResource(R.string.login_text))
             }
         }
+    }
+}
+
+fun horoscopeCalculation(month: String, day: String): String {
+    return when (month) {
+        "3" -> if (day.toInt() > 20) "Koç" else "Balık"
+        "4" -> if (day.toInt() > 21) "Boğa" else "Koç"
+        "5" -> if (day.toInt() > 20) "İkizler" else "Boğa"
+        "6" -> if (day.toInt() > 20) "Yengeç" else "İkizler"
+        "7" -> if (day.toInt() > 20) "Aslan" else "Yengeç"
+        "8" -> if (day.toInt() > 20) "Başak" else "Aslan"
+        "9" -> if (day.toInt() > 20) "Terazi" else "Başak"
+        "10" -> if (day.toInt() > 20) "Akrep" else "Terazi"
+        "11" -> if (day.toInt() > 20) "Yay" else "Akrep"
+        "12" -> if (day.toInt() > 20) "Oğlak" else "Yay"
+        "1" -> if (day.toInt() > 20) "Kova" else "Oğlak"
+        "2" -> if (day.toInt() > 20) "Balık" else "Kova"
+        else -> ""
     }
 }

@@ -94,6 +94,12 @@ fun ProfileScreen() {
                 label = { Text(stringResource(R.string.birth_time_label)) },
                 readOnly = true,
             )
+            Spacer(Modifier.padding(8.dp))
+            OutlinedTextField(
+                value = personData.zodiacSign, onValueChange = {},
+                label = { Text(stringResource(R.string.zodiac_sign_label)) },
+                readOnly = true,
+            )
         }
     }
 }
