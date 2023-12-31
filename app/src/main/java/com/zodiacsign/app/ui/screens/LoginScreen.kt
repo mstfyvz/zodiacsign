@@ -42,8 +42,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.zodiacsign.app.R
-import com.zodiacsign.app.data.model.BirthTime
-import com.zodiacsign.app.data.model.PersonData
+import com.zodiacsign.app.model.BirthTime
+import com.zodiacsign.app.model.PersonData
 import com.zodiacsign.app.ui.MainActivity
 import com.zodiacsign.app.util.Constants.PERSON_DATA
 import java.util.Calendar

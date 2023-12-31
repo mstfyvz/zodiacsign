@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.zodiacsign.app.R
-import com.zodiacsign.app.data.model.CommentDetailId
+import com.zodiacsign.app.model.CommentDetailId
 import com.zodiacsign.app.ui.components.StyledText
 import com.zodiacsign.app.ui.components.textResource
 

@@ -1,4 +1,4 @@
-package com.zodiacsign.app.data.model
+package com.zodiacsign.app.model
 
 enum class CommentDetailId (val value: String) {
     FIRE_ELEMENT("0"),

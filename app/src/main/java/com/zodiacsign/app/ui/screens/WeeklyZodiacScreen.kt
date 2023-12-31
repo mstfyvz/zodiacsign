@@ -12,7 +12,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.zodiacsign.app.R
-import com.zodiacsign.app.data.model.WeeklyZodiac
+import com.zodiacsign.app.model.WeeklyZodiac
 
 @Composable
 fun WeeklyZodiacScreen() {

@@ -15,10 +15,10 @@ import com.zodiacsign.app.ui.navigation.NavigationItem
 fun HomeScreen(navController: NavController) {
 
     Column(Modifier.padding(16.dp)) {
-        CardComponent(stringResource(R.string.home_zodiac)) {
+        CardComponent(stringResource(R.string.home_zodiac), null, stringResource(R.string.aries_content)) {
             navController.navigate(NavigationItem.ZodiacScreenNavigationItem.route)
         }
-        CardComponent(stringResource(R.string.home_weekly_zodiac)) {
+        CardComponent(stringResource(R.string.home_weekly_zodiac), null, stringResource(R.string.aries_weekly_content)) {
             navController.navigate(NavigationItem.WeeklyZodiacScreenNavigationItem.route)
         }
     }

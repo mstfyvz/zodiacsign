@@ -27,8 +27,8 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.zodiacsign.app.R
-import com.zodiacsign.app.data.model.CommentDetailId
-import com.zodiacsign.app.data.model.PlanetDetailId
+import com.zodiacsign.app.model.CommentDetailId
+import com.zodiacsign.app.model.PlanetDetailId
 import com.zodiacsign.app.ui.screens.CommentDetailScreen
 import com.zodiacsign.app.ui.screens.CommentScreen
 import com.zodiacsign.app.ui.screens.HomeScreen

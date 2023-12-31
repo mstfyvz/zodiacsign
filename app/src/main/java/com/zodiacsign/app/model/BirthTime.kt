@@ -1,4 +1,4 @@
-package com.zodiacsign.app.data.model
+package com.zodiacsign.app.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
