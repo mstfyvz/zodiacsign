@@ -109,8 +109,8 @@ fun LoginScreen() {
                     DatePickerDialog(context, { _, year, month, day ->
                         TimePickerDialog(context, { _, hour, minute ->
                             val pickedDateTime = Calendar.getInstance()
-                            pickedDateTime.set(year, month, day, hour, minute)
-                            birthTime = BirthTime("$year", "$month", "$day", "$hour", "$minute")
+                            pickedDateTime.set(year, month + 1, day, hour, minute)
+                            birthTime = BirthTime("$year", "${month + 1}", "$day", "$hour", "$minute")
                             birthTimeValue = String.format(
                                 context.getString(R.string.birth_time_value),
                                 birthTime.year,
